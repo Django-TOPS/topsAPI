@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Call</title>
+</head>
+
+<body bgcolor="gold">
+    <center>
+        <h1>Welcome to API Calling</h1>
+    </center>
+    <hr>
+    <!-- {{res}} -->
+
+    <!-- {% for i in data %}
+    {{i.firstname}}
+    {{i.lastname}}
+    {{i.email}}
+    {% endfor %} -->
+
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Mobile</th>
+        </tr>
+        {% for i in data %}
+        <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.firstname}}</td>
+            <td>{{i.lastname}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.mobile}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+
+</html>
